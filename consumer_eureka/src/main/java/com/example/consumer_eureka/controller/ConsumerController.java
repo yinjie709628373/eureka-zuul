@@ -15,7 +15,7 @@ public class ConsumerController {
     @RequestMapping("/hello-consumer")
     public String helloConsumer() {
         //调用hello-service服务，注意这里用的是服务名，而不是具体的ip+port
-        String result=restTemplate.getForObject("http://hello-service/test", String.class);
+        String result = restTemplate.getForObject("http://hello-service/test", String.class);
         return result;
     }
 }

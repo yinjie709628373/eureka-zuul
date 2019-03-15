@@ -12,6 +12,7 @@ public class UseController {
     @RequestMapping(value = "", method = RequestMethod.GET)
     @ResponseBody
     public String test() throws Exception {
-        return "<\\![CDATA[1+1]]>";
+        System.out.println("Ok");
+        return "Ok";
     }
 }

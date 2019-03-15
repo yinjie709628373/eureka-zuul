@@ -11,12 +11,13 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequestMapping("/test2")
 public class TestController {
     @Autowired
-    private TestEurake testEurake ;
+    private TestEurake testEurake;
+
     @RequestMapping(value = "", method = RequestMethod.GET)
     @ResponseBody
     public Object test() throws Exception {
-        String  res=testEurake.test();
-        return  res;
+        String res = testEurake.test();
+        return res;
     }
 
     @RequestMapping(value = "/test3", method = RequestMethod.GET)
